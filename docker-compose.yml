@@ -142,8 +142,8 @@ services:
       # default settings
       CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
     volumes:
-      - ./docker/clickhouse/local/config.xml:/etc/clickhouse-server/config.xml
-      - ./docker/clickhouse/local/users.xml:/etc/clickhouse-server/users.xml
+      # - ./docker/clickhouse/local/config.xml:/etc/clickhouse-server/config.xml
+      # - ./docker/clickhouse/local/users.xml:/etc/clickhouse-server/users.xml
       - .volumes/ch_data:/var/lib/clickhouse
       - .volumes/ch_logs:/var/log/clickhouse-server
     restart: on-failure
